@@ -15,10 +15,7 @@ registerApplication(
   'vueapp',
   // Our loading function
   () => import('./src/vueapp/vueapp.app.js'),
-  // Our activity function
-  () => location.pathname === "" ||
-    location.pathname === "/vueapp" ||
-    location.pathname.startsWith('/vueapp')
+    pathPrefix('/vueapp')
 );
 
 
